@@ -1,0 +1,222 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../assets/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    width: 100%;
+}
+
+#cari {
+    margin: 0px auto;
+    padding: 5px;
+    width: 100%;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.7);
+    display: flex;
+    text-align: right;
+    top: 15px;
+    position: sticky;
+    align-items: center;
+}
+
+#cari input {
+    flex-basis: 30%;
+    margin: auto 5px;
+    padding: 15px;
+    border: 1px solid rgba(250, 250, 250, 0.5);
+    border-radius: 10px;
+    color: white;
+    font-family: serif;
+    background-color: transparent;
+}
+
+#cari>input:focus {
+    background-color: rgba(0, 0, 150, 0.5);
+    border: 1px solid rgba(0, 0, 150, 0.5);
+    font-size: 12pt;
+}
+
+#cari>input::placeholder {
+    color: rgba(255, 255, 255, 0.418);
+    font-weight: normal;
+}
+
+#cari>button {
+    flex-basis: 15%;
+    cursor: pointer;
+    margin: auto;
+    padding: 15px;
+    background-color: navy;
+    border-radius: 10px;
+    color: white;
+    border: 0;
+}
+
+#judul {
+    flex-basis: 55%;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    padding: left;
+}
+
+kolom-utama {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    text-align: center;
+    color: white;
+}
+
+kolom-info {
+    max-width: 90%;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: justify;
+    box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+}
+
+kolom-info img {
+    width: 100%;
+    margin: 0;
+    border-radius: 15px;
+}
+
+#gambar {
+    flex-basis: 40%;
+    min-width: 40%;
+    overflow-y: hidden;
+    border-radius: 15px;
+    padding: 0;
+
+
+}
+
+#info {
+    flex-basis: 60%;
+    min-width: 60%;
+    margin-left: 5px;
+    background-color: rgba(0, 0, 150, 0.5);
+    border-radius: 15px;
+}
+
+kolom-info p,
+h3 {
+    color: white;
+    padding: 5px;
+}
+
+kolom-info a:link,
+:visited {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0px auto;
+    text-align: center;
+    display: block;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+kolom-info a:hover {
+    color: rgba(0, 0, 150, 0.5);
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.medsos {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin: 0 auto;
+    color: darkblue;
+    margin-bottom: 10px;
+}
+
+footer img {
+    width: 100px;
+    height: auto;
+}
+
+.app {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width:768px) {
+    body {
+        min-width: 490px;
+    }
+
+    #cari {
+        flex-direction: column;
+        position: sticky;
+        top: 0;
+        transition: top 0.9s;
+    }
+
+    #judul {
+        flex-basis: 100%;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #cari input {
+        margin: auto;
+        min-width: 100%;
+        text-align: center;
+    }
+
+    #cari>button {
+        margin: 10px auto;
+        min-width: 100%;
+    }
+
+    kolom-utama {
+        margin: 20px auto;
+    }
+
+    kolom-info {
+        max-width: 95%;
+        margin: 30px auto;
+        border-radius: 20px;
+        text-align: justify;
+        box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    kolom-info img {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    #gambar {
+        flex-basis: 100%;
+        overflow-y: hidden;
+        border-radius: 15px;
+        padding: 0;
+
+    }
+
+    #info {
+        flex-basis: 100%;
+        background-color: rgba(0, 0, 150, 0.5);
+        border-radius: 15px;
+        margin-left: 0px;
+    }
+}
